@@ -1,15 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
 .header {
+  display: flex;
+  flex-direction: row-reverse;
   list-style-type: none;
   margin: 10px;
   overflow: hidden;
   margin-right: 16px;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   font-size: 13px;
+}
+
+.google-logo {
+  width: 272px;
+  height: 92px;
+}
+
+.pic {
+  display: inline-block;
+  outline: none;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin-right: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.me {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .headerli a {
   display: block;
-  color: black;
+  color: rgb(114, 107, 107);
   text-align: center;
   padding: 5px 5px;
   text-decoration: none;
@@ -21,23 +51,26 @@
 
 .container {
   text-align: center;
-  margin: 100px;
+  margin: 30px;
 }
 
 .search-area {
-  background: #fff;
   display: flex;
+  z-index: 3;
+  min-height: 44px;
+  background: #fff;
   border: 1px solid #dfe1e5;
   box-shadow: none;
-  z-index: 3;
-  height: 44px;
+  border-radius: 24px;
   margin: 0 auto;
-  margin-top: -77px;
-  width: 582px;
+  width: 638px;
+  width: auto;
+  max-width: 584px;
+  margin-bottom: 40px;
 }
 
 .search-area:hover {
-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .search {
@@ -45,7 +78,13 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   display: flex;
   padding: 5px 8px 0 16px;
   padding-left: 14px;
+
 }
+
+
+
+
+
 
 .search-img {
   display: flex;
@@ -102,28 +141,68 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: start;
   appearance: textfield;
   cursor: text;
+  width: 500px;
+  border: none;
+
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .googlesearch {
-  margin: 11px 4px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
   padding: 0 16px;
   line-height: 27px;
+  height: 36px;
   min-width: 54px;
   text-align: center;
   cursor: pointer;
   user-select: none;
+}
+
+.feelinglucky:hover,
+.googlesearch:hover {
+  border: 1px solid #ced2d3;
+
 }
 
 .feelinglucky {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
   padding: 0 16px;
   line-height: 27px;
+  height: 36px;
   min-width: 54px;
   text-align: center;
   cursor: pointer;
   user-select: none;
+  margin-left: 8px;
+}
+
+.voice {
+
+  width: 23px;
+  height: 23px;
+  margin: 5px 10px 0 5px;
 }
 
 .footer {
+  background-color: #f2f2f2;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
